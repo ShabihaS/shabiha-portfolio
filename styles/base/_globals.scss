@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+
+body {
+  background-color: v.$off-white;
+  color: v.$obsidian-black;
+  font-family: v.$font-body;
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}

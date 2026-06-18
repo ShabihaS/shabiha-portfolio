@@ -1,0 +1,91 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  &__content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    color: v.$pebble-grey;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-family: v.$font-heading;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    color: v.$obsidian-black;
+    margin-bottom: 0.5rem;
+  }
+
+  &__role {
+    font-size: 1.5rem;
+    color: v.$natural-oak;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: v.$pebble-grey;
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+  &__image {
+    margin-top: 3rem;
+
+    img {
+      width: 220px;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  }
+}
+@include m.respond(tablet) {
+  .hero {
+    padding: 5rem 3rem;
+
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__image img {
+      width: 280px;
+    }
+  }
+}
+@include m.respond(desktop) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    text-align: center;
+    gap: 4rem;
+
+    max-width: 1200px;        
+    margin: 0 auto;            
+
+    &__content {
+      flex: 1;                 
+      margin: 0;
+    }
+
+    &__image {
+      flex: 1;                
+      margin-top: 0;
+
+      img {
+        width: 350px;
+      }
+    }
+  }
+}

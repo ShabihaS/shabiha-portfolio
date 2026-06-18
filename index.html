@@ -1,54 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio Website</title>
-     <link rel="stylesheet" href="./css/main.css" />
-     
-    
-</head>
-<body>
-    <header>
-       
-        <nav class="navbar">
-            <div class="navbar__logo">Logo here</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-            <div class="navbar__links">
-            
-                <a class="navbar__link" href="#home">Home</a>
-                <a class="navbar__link" href="#about">About</a>  
-                <a class="navbar__link" href="#skills">Skills</a>
-                <a class="navbar__link" href="#projects">Projects</a>
-                <a class="navbar__link" href="#contact">Contact</a>
-            </div>
-        </nav>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__container">
+          <div class="navbar__logo">S.S</div>
+
+          <div class="navbar__links">
+            <a class="navbar__link" href="#home">Home</a>
+            <a class="navbar__link" href="#about">About</a>
+            <a class="navbar__link" href="#skills">Skills</a>
+            <a class="navbar__link" href="#projects">Projects</a>
+            <a class="navbar__link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="hero" id="home">
-            <h1 >Welcome Page</h1>
-            <p>This is Home page</p>
-        </section>
-        <section class="about" id="about">
-            <h2>About Me Page</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam reprehenderit pariatur corporis hic dolore voluptas nihil ex dignissimos sapiente magnam placeat unde quis accusamus nisi, quod ipsam. Quis, voluptates.</p>
-        </section>
-        <section class="skills" id="skills">
-            <h2>Skills Page</h2>
-            
-        </section>
-        <section class="poojects" id="projects">
-            <h2>Projects page</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ea sapiente nihil odio at enim, possimus ab beatae corrupti, aperiam temporibus nulla quia ducimus sequi aspernatur molestias. Vitae, beatae doloremque.</p>
-        </section>
-        <section  class="contact" id="contact">
-            <h2>Contact Me</h2>
-           
-        </section>
+      <section class="hero" id="home">
+        <div class="hero__content">
+          <p class="hero__subtitle">Hello, I’m</p>
+          <h1 class="hero__title">Shabiha</h1>
+          <h2 class="hero__role">FullStack Developer</h2>
+          <p class="hero__text">
+            I build clean, responsive and user-friendly websites with modern web
+            technologies.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#projects" class="button">View Projects</a>
+            <a href="#contact" class="button button--secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img src="./assets/Profile_Picture.png"Shabiha portfolio profile" />
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2>About Me Page</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam
+          reprehenderit pariatur corporis hic dolore voluptas nihil ex
+          dignissimos sapiente magnam placeat unde quis accusamus nisi, quod
+          ipsam. Quis, voluptates.
+        </p>
+      </section>
+      <section class="skills" id="skills">
+        <h2>Skills Page</h2>
+      </section>
+      <section class="poojects" id="projects">
+        <h2>Projects page</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ea
+          sapiente nihil odio at enim, possimus ab beatae corrupti, aperiam
+          temporibus nulla quia ducimus sequi aspernatur molestias. Vitae,
+          beatae doloremque.
+        </p>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+      </section>
     </main>
     <footer class="footer">
-        <p>All Right Reserved</p>   
+      <p>All Right Reserved</p>
     </footer>
-</body>
+  </body>
 </html>
-                

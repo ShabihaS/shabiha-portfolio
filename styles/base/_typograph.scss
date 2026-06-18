@@ -1,1 +1,11 @@
+@use "../abstracts/variables" as v;
 
+h1, h2, h3 {
+  font-family: v.$font-heading;
+  color: v.$obsidian-black;
+}
+
+p {
+  font-size: 1rem;
+  color: v.$pebble-grey;
+}

@@ -1,0 +1,22 @@
+
+
+@use "../abstracts/variables" as v;
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background-color: v.$sage-green;
+  color: v.$off-white;
+  border-radius: 4px;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border: 1px solid v.$obsidian-black;
+    color: v.$obsidian-black;
+  }
+}
