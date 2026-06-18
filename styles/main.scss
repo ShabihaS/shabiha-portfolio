@@ -1,0 +1,25 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+
+@use "./base/globals";
+@use "./base/reset";
+@use "./base/typograph";
+
+@use "./layout/navbar";
+@use "./layout/hero";
+@use "./layout/about";
+@use "./layout/skills";
+@use "./layout/projects";
+@use "./layout/contact";
+@use "./layout/footer";
+
+@use "./components/buttons";
+@use "./components/cards";
+
+@use "./responsive/desktop";
+@use "./responsive/tablet";
+@use "./responsive/mobile";
+
+
+
+
