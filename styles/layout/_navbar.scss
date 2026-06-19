@@ -2,13 +2,14 @@
 @use "../abstracts/mixins" as m;
 
 .navbar {
-  background-color: v.$off-white;
+  background-color: v.$cream;
   padding: 0.5rem;
   font-family: v.$font-body;
+  border-bottom: 1px solid v.$sand;
 
   &__container {
     display: flex;
-    flex-direction: column; // mobile first
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
@@ -16,13 +17,13 @@
   &__logo {
     font-family: v.$font-heading;
     font-size: 1.8rem;
-    color: v.$obsidian-black;
+    color: v.$espresso;
     letter-spacing: 1px;
   }
 
   &__links {
     display: flex;
-    flex-direction: column; // mobile
+    flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
@@ -30,8 +31,13 @@
   &__link {
     position: relative;
     padding: 0.5rem;
-    color: v.$obsidian-black;
+    color: v.$coffee;
     text-decoration: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: v.$espresso;
+    }
 
     &::after {
       content: "";
@@ -40,7 +46,7 @@
       height: 2px;
       left: 0;
       bottom: -4px;
-      background-color: v.$natural-oak;
+      background-color: v.$tan;
       transition: 0.3s ease;
     }
 
@@ -49,6 +55,10 @@
     }
   }
 }
+
+//TABLET / DESKTOP
+   
+
 @include m.respond(tablet) {
   .navbar {
     padding: 1rem 2rem;

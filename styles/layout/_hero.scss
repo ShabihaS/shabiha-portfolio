@@ -4,6 +4,7 @@
 .hero {
   padding: 4rem 2rem;
   text-align: center;
+  background-color: v.$cream;
 
   &__content {
     max-width: 500px;
@@ -11,34 +12,34 @@
   }
 
   &__subtitle {
-    color: v.$pebble-grey;
+    color: v.$coffee;
     margin-bottom: 0.5rem;
   }
 
   &__title {
     font-family: v.$font-heading;
     font-size: clamp(2.5rem, 8vw, 4rem);
-    color: v.$obsidian-black;
+    color: v.$espresso;
     margin-bottom: 0.5rem;
   }
 
   &__role {
     font-size: 1.5rem;
-    color: v.$natural-oak;
+    color: v.$tan;
     margin-bottom: 1rem;
   }
 
   &__text {
-    color: v.$pebble-grey;
+    color: v.$coffee;
     margin-bottom: 2rem;
   }
 
   &__buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center; 
-}
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   &__image {
     margin-top: 3rem;
@@ -47,9 +48,12 @@
       width: 220px;
       max-width: 100%;
       border-radius: 12px;
+      border: 2px solid v.$sand;
     }
   }
 }
+
+//Tablet
 @include m.respond(tablet) {
   .hero {
     padding: 5rem 3rem;
@@ -63,24 +67,26 @@
     }
   }
 }
+
+//Desktop
 @include m.respond(desktop) {
   .hero {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     text-align: center;
     gap: 4rem;
 
-    max-width: 1200px;        
-    margin: 0 auto;            
+    max-width: 1200px;
+    margin: 0 auto;
 
     &__content {
-      flex: 1;                 
+      flex: 1;
       margin: 0;
     }
 
     &__image {
-      flex: 1;                
+      flex: 1;
       margin-top: 0;
 
       img {

@@ -2,10 +2,11 @@
 
 h1, h2, h3 {
   font-family: v.$font-heading;
-  color: v.$obsidian-black;
+  color: v.$espresso;
 }
 
 p {
   font-size: 1rem;
-  color: v.$pebble-grey;
+  color: v.$coffee;
+  line-height: 1.6;
 }
