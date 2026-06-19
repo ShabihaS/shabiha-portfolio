@@ -1,20 +1,38 @@
-$off-white: #FCFCF7;
-$natural-oak: #C5A682;
-$obsidian-black: #222123;
-$pebble-grey: #848481;
-$sage-green: #163832;
 
-/*Backgroundd:#051F20
-$Background (Elevated / Card): #0B2B26
-$Border / Secondary Button: #163832
-$Accent (Subtle / Hover): #235347
-$Primary Accent: #8EB69B
-$Primary Text / High-Contrast CTA: #DAF1DE
+$cream: #F5F1EA;
+$sand: #D7C9B8;
+$tan: #B2967D;
+$coffee: #7D5A44;
+$espresso: #4A342A;
 
 
-jbjabbj
+$bg: $cream;
+$bg-alt: $sand;
+$bg-dark: $espresso;
 
 
-/* FONTS */
+$primary: $coffee;
+$primary-light: $tan;
+$primary-dark: $espresso;
+
+
+$text: $espresso;
+$text-muted: $coffee;
+$text-light: $cream;
+
+
+$surface: $sand;
+$border: $tan;
+
+
+$accent: $tan;
+$hover: $coffee;
+
+$success: $coffee;
+$warning: $tan;
+$error: #A0522D;
+$info: $coffee;
+
+
 $font-heading: 'Playfair Display', serif;
 $font-body: 'Inter', sans-serif;

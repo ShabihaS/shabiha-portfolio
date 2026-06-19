@@ -1,8 +1,8 @@
 @use "../abstracts/variables" as v;
 
 body {
-  background-color: v.$off-white;
-  color: v.$obsidian-black;
+  background-color: v.$cream;
+  color: v.$espresso;
   font-family: v.$font-body;
   line-height: 1.6;
 
@@ -13,7 +13,13 @@ body {
 html {
   font-size: 16px;
 }
+
 a {
-  color: inherit;
+  color: v.$coffee;
   text-decoration: none;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: v.$espresso;
+  }
 }
