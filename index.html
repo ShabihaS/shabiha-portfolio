@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio Website</title>
+    <title>Shabiha Sultana</title>
+    <link rel="icon" type="image/png" href="assets/profileIcon.png">
+<link rel="shortcut icon" href="assets/profileIcon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -14,7 +16,10 @@
     <header class="header">
       <nav class="navbar">
         <div class="navbar__container">
-          <div class="navbar__logo">S.S</div>
+      <div class="navbar__logo">
+  <img src="assets/profileIcon.png" alt="S.S Logo" />
+ 
+</div>
 
           <div class="navbar__links">
             <a class="navbar__link" href="#home">Home</a>
@@ -51,6 +56,11 @@
 
 
 <section class="about" id="about">
+
+
+    <div class="about__bg">
+    <img src="assets/about.png" alt="Background">
+  </div>
   <div class="about__container">
 
 
@@ -62,21 +72,35 @@
       <div class="about__text">
 
         <p>
-          I am an aspiring Full-Stack Developer currently transitioning into the tech industry, combining my technical education with hands-on development experience. My passion lies in building clean, efficient, and user-friendly applications while continuously expanding my knowledge across both frontend and backend technologies.
+         I have several years of experience in operations and support and am now transitioning into the IT industry. I am passionate about AI and modern application development, with a strong interest in building clean, efficient, and user-friendly solutions. I am actively growing my skills in full-stack development and enjoy learning new technologies.
+
+Outside of tech, I enjoy traveling and painting, which help me stay creative and bring fresh perspectives into my work.
         </p>
 
         
         <div class="about__section">
-          <h3>🏫 Education</h3>
+  <h3>🏫 Education</h3>
+  <ul>
+    <li>
+      <strong>Bachelor of Computer Science</strong> — National University of Bangladesh (2006)
+    </li>
+  </ul>
+</div>
 
-          <p>
-            <strong>B.S. in Computer Science</strong> — National University of Bangladesh (2006)
-          </p>
-
-          <p>
-            <strong>Certificate IV in Information Technology</strong> — TAFE (2021)
-          </p>
-        </div>
+<div class="about__section">
+  <h3>📜 Certifications</h3>
+  <ul>
+    <li>
+      <strong>Introduction to Artificial Intelligence</strong> — Institute of Applied Technology (2025)
+    </li>
+    <li>
+      <strong>Foundations of Digital Marketing and E-commerce</strong> — Google (2024)
+    </li>
+    <li>
+      <strong>Certificate IV in Information Technology</strong> — TAFE NSW (2022)
+    </li>
+  </ul>
+</div>
 
        
         <div class="about__section">
@@ -86,25 +110,19 @@
             <strong>Intern Programmer</strong> — Weigh-More Solution (Jan 2025 – Jun 2025)
           </p>
 
-          <p>
-            Contributed to software development, testing, debugging, and cloud-based solutions using C#, React, JavaScript, HTML, CSS, GitHub, and Azure.
-          </p>
+         
 
           <p>
             <strong>Inventory & Facility Coordinator</strong> — NEPEAN Transport Equipment (Jul 2019 – Sep 2021)
           </p>
 
-          <p>
-            Managed inventory systems, procurement, and facility operations while ensuring efficiency and compliance.
-          </p>
+         
 
           <p>
             <strong>Team Leader</strong> — DHL Supply Chain (Oct 2016 – Jun 2019)
           </p>
 
-          <p>
-            Led a team of 35 staff, managed KPIs, and maintained inventory accuracy using SAP and Manhattan WMS.
-          </p>
+         
 
         </div>
 
@@ -189,8 +207,62 @@
   </div>
 </section>
       <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-      </section>
+
+        
+        <div class="container">
+  <div class="contact__container">
+
+    <h2 class="contact__title">Get In Touch</h2>
+
+    <div class="contact__content">
+
+      <!-- LEFT -->
+      <div class="contact__info">
+        <h3 class="contact__heading">Let’s Connect</h3>
+
+        <p class="contact__text">
+          I’m open to new opportunities, collaborations, and conversations
+          about software development.
+        </p>
+
+        <p class="contact__detail">📧 shabiha.sultana@gmx.com</p>
+        <p class="contact__detail">📍 Sydney, Australia</p>
+
+        <div class="contact__socials">
+          <a href="https://github.com/ShabihaS" class="contact__link">GitHub</a><br>
+          <a href="https://www.linkedin.com/in/shabiha/" class="contact__link">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+    <form class="contact__form" action="https://formspree.io/f/xeebjkgz" method="POST">
+
+  <div class="contact__group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" class="contact__input" required>
+  </div>
+
+  <div class="contact__group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" class="contact__input" required>
+  </div>
+
+  <div class="contact__group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" class="contact__textarea" required></textarea>
+  </div>
+
+  <button type="submit" class="button contact__button">
+    Send Message
+  </button>
+
+</form>
+
+    </div>
+
+  </div>
+  </div>
+</section>
     </main>
     <footer class="footer">
       <p>All Right Reserved</p>

@@ -1,6 +1,9 @@
 @use "../abstracts/variables" as v;
 
 body {
+  margin: 0;
+  padding: 0;
+
   background-color: v.$cream;
   color: v.$espresso;
   font-family: v.$font-body;
@@ -9,6 +12,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+section {
+  padding: 5rem 0;
+}
+
+
 
 html {
   font-size: 16px;
