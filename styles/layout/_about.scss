@@ -1,0 +1,138 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.about {
+  position: relative;
+  min-height: 70vh;
+  overflow: hidden;
+  padding: 4rem 2rem;
+  background-color: v.$cream;
+
+  /* BACKGROUND IMAGE */
+ &__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* 👇 ADD THIS */
+  &::after {
+     content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(245, 241, 234, 0.85);
+  backdrop-filter: blur(1px);
+  }
+}
+
+  /* CONTENT WRAPPER */
+  &__container {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* TITLE */
+  &__title {
+    font-family: v.$font-heading;
+    font-size: 2.5rem;
+    color: v.$espresso;
+    text-align: center;
+  }
+
+  /* CONTENT LAYOUT */
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* TEXT BLOCK */
+  &__text {
+    flex: 1;
+    padding: 2rem;
+    color: v.$coffee;
+    line-height: 1.7;
+  }
+
+  /* IMAGE BLOCK */
+  &__image {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+
+  /* SECTION (Education / Certifications) */
+  &__section {
+    margin-bottom: 2rem;
+
+    h3 {
+      margin-bottom: 1rem;
+      color: #4A342A;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    li {
+      background: #F5F1EA;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid #7D5A44;
+      border-radius: 6px;
+      color: #4A342A;
+      line-height: 1.5;
+      transition: all 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateX(4px);
+      background: #EDE3D8;
+    }
+
+    strong {
+      color: #4A342A;
+    }
+  }
+}
+
+/* DESKTOP */
+@include m.respond(desktop) {
+  .about {
+    &__content {
+      flex-direction: row;
+      gap: 3rem;
+      align-items: stretch;
+    }
+
+    &__text {
+      flex: 1.2;
+    }
+
+    &__image {
+      flex: 1;
+    }
+  }
+}
