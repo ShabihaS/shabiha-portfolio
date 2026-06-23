@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -10,6 +12,19 @@
   align-items: center;
 }
 
+@mixin font-body{
+  color: v.$coffee ;
+  font-family: v.$font-body;
+  font-size: 1rem;
+}
+
+@mixin title{text-align: center;
+    font-size: 2.5rem;
+    color: v.$espresso;
+    margin-bottom: 3rem;
+    font-family: v.$font-heading;
+  }
+
 @mixin respond($breakpoint) {
   @if $breakpoint == mobile {
     @media (max-width: 767px) {
@@ -18,7 +33,7 @@
   }
 
   @if $breakpoint == tablet {
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
       @content;
     }
   }
