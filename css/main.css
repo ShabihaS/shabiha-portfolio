@@ -149,15 +149,22 @@ p {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .hero__image {
-  margin-top: 3rem;
-}
-.hero__image img {
   width: 220px;
-  max-width: 100%;
-  border-radius: 12px;
-  border: 2px solid #D7C9B8;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 2rem auto 0;
+}
+.hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -186,11 +193,10 @@ p {
     margin: 0;
   }
   .hero__image {
-    flex: 1;
-    margin-top: 0;
-  }
-  .hero__image img {
-    width: 350px;
+    flex: 0 0 320px;
+    width: 320px;
+    height: 320px;
+    margin: 0;
   }
 }
 .about {
@@ -219,7 +225,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(245, 241, 234, 0.85);
+  background: rgba(245, 241, 234, 0.65);
   backdrop-filter: blur(1px);
 }
 .about {
@@ -276,33 +282,17 @@ p {
   /* SECTION (Education / Certifications) */
 }
 .about__section {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .about__section h3 {
   margin-bottom: 1rem;
   color: #4A342A;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-.about__section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.about__section li {
-  background: #F5F1EA;
-  padding: 0.75rem 1rem;
-  border-left: 3px solid #7D5A44;
-  border-radius: 6px;
+.about__section p {
+  margin-bottom: 0.25rem;
   color: #4A342A;
-  line-height: 1.5;
-  transition: all 0.2s ease;
-}
-.about__section li:hover {
-  transform: translateX(4px);
-  background: #EDE3D8;
+  line-height: 1.6;
 }
 .about__section strong {
   color: #4A342A;
@@ -459,12 +449,12 @@ p {
 }
 .contact__form {
   background-color: #D7C9B8;
-  padding: 2rem;
+  padding: 1.25rem;
   border-radius: 16px;
   border: 1px solid #B2967D;
 }
 .contact__group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .contact label {
   display: block;
@@ -474,14 +464,14 @@ p {
 }
 .contact__input, .contact__textarea {
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   border: 1px solid #B2967D;
   border-radius: 8px;
   background-color: #F5F1EA;
   color: #4A342A;
 }
 .contact__textarea {
-  min-height: 150px;
+  min-height: 120px;
 }
 .contact__button {
   margin-top: 1rem;
