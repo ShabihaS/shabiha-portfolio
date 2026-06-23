@@ -11,11 +11,7 @@
   }
 
   &__title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: v.$espresso;
-    margin-bottom: 3rem;
-    font-family: v.$font-heading;
+    @include m.title;
   }
 
   &__grid {

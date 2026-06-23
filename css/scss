@@ -1,0 +1,19 @@
+/* Error: There is no module with the namespace "v".
+ *    ,
+ * 15 |   font-family: v.$font-body;
+ *    |                ^^^^^^^^^^^^
+ *    '
+ *   styles\abstracts\_mixins.scss 15:16  font-body()
+ *   styles\layout\_navbar.scss 7:2       @use
+ *   styles\main.scss 8:1                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "v".\a    \2577 \a 15 \2502    font-family: v.$font-body;\d\a    \2502                 ^^^^^^^^^^^^\a    \2575 \a   styles\\abstracts\\_mixins.scss 15:16  font-body()\a   styles\\layout\\_navbar.scss 7:2       @use\a   styles\\main.scss 8:1                 root stylesheet';
+}
